@@ -1,0 +1,45 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 1);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.overlay-title {
+    padding: 10px;
+}
+
+.overlay-content {
+    position: relative;
+    width: 90%;
+    text-align: left;
+    padding: 10px;
+}
+
+.overlay a {
+    padding: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    text-decoration: underline;
+}
+
+.overlay #close {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 20px;
+}
